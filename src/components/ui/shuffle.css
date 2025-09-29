@@ -1,0 +1,122 @@
+
+.shuffle-parent {
+  display: inline-block;
+  white-space: normal;
+  word-wrap: break-word;
+  will-change: transform;
+  line-height: 1.2;
+  visibility: hidden;
+  font-family: var(--font-press-start), 'Press Start 2P', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.shuffle-parent.is-ready {
+  visibility: visible;
+}
+
+.shuffle-char-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: baseline;
+  position: relative;
+}
+
+.shuffle-char-wrapper > span {
+  display: inline-flex;
+  will-change: transform;
+}
+
+.shuffle-char {
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Much bigger responsive font sizes */
+.shuffle-parent {
+  font-size: 3rem; /* text-5xl - mobile */
+}
+
+@media (min-width: 640px) {
+  .shuffle-parent {
+    font-size: 4rem; /* text-6xl - small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .shuffle-parent {
+    font-size: 5rem; /* text-7xl - medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .shuffle-parent {
+    font-size: 6rem; /* text-8xl - large screens */
+  }
+}
+
+@media (min-width: 1280px) {
+  .shuffle-parent {
+    font-size: 7rem; /* text-9xl - extra large screens */
+  }
+}
+
+/* Specific styling for main title - reduced by 40%, then 20%, then 10% (total 57.2% reduction) */
+.shuffle-main-title.shuffle-parent {
+  font-size: 1.296rem; /* 1.44rem * 0.9 = 1.296rem - mobile */
+}
+
+@media (min-width: 640px) {
+  .shuffle-main-title.shuffle-parent {
+    font-size: 1.728rem; /* 1.92rem * 0.9 = 1.728rem - small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .shuffle-main-title.shuffle-parent {
+    font-size: 2.16rem; /* 2.4rem * 0.9 = 2.16rem - medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .shuffle-main-title.shuffle-parent {
+    font-size: 2.592rem; /* 2.88rem * 0.9 = 2.592rem - large screens */
+  }
+}
+
+@media (min-width: 1280px) {
+  .shuffle-main-title.shuffle-parent {
+    font-size: 3.024rem; /* 3.36rem * 0.9 = 3.024rem - extra large screens */
+  }
+}
+
+/* DecryptedText styling with Press Start 2P font - 50% smaller and pure white */
+.decrypted-text-container {
+  font-family: var(--font-press-start), 'Press Start 2P', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  color: #ffffff !important;
+}
+
+.decrypted-text-container .text-3xl {
+  font-size: 0.75rem; /* 1.5rem * 0.5 = 0.75rem */
+}
+
+.decrypted-text-container .sm\:text-4xl {
+  font-size: 0.75rem; /* Keep same for mobile first */
+}
+
+@media (min-width: 640px) {
+  .decrypted-text-container .sm\:text-4xl {
+    font-size: 1rem; /* 2rem * 0.5 = 1rem */
+  }
+}
+
+/* Additional styling for animated state */
+.decrypted-text-container.encrypted {
+  color: #ffffff !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}

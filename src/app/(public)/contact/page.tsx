@@ -43,10 +43,19 @@ export default function ContactPage() {
             We typically respond within one business day. For urgent requests, please email us directly.
           </p>
 
+<<<<<<< Updated upstream
           <div className="mt-6 rounded-lg border p-6 space-y-4">
             <a href="mailto:hello@careerhub.app" className="flex items-center gap-3 hover:underline">
               <Mail className="h-5 w-5" />
               <span>hello@careerhub.app</span>
+=======
+          <div className="mt-6 rounded-lg border p-6 space-y-4 bg-white/10 backdrop-blur-sm border-white/20">
+            <a
+              href="mailto:hello@babycollab.app"
+              className="flex items-center gap-3 hover:underline text-white"
+            >
+              <Mail className="h-5 w-5" /> hello@babycollab.app
+>>>>>>> Stashed changes
             </a>
             <div className="flex items-center gap-4 pt-2">
               <a className="inline-flex items-center gap-2 text-foreground/90 hover:underline" href="#" aria-label="GitHub">
