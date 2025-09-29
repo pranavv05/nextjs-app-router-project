@@ -15,7 +15,11 @@ const nextConfig: NextConfig = {
         hostname: '**',
       },
     ],
+    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './image-loader.js',
   },
+
   outputFileTracingRoot: path.resolve(__dirname, '../../'),
   turbopack: {
     rules: {
