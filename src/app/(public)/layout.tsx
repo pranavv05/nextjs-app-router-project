@@ -1,7 +1,12 @@
+import { ReactNode } from "react";
 import PublicHeader from "@/components/PublicHeader";
 import Footer from "@/components/Footer";
 
-export default function PublicLayout({ children }: { children: React.ReactNode }) {
+interface LayoutProps {
+  children: ReactNode;
+}
+
+export default function PublicLayout({ children }: LayoutProps) {
   return (
     <div className="min-h-dvh flex flex-col">
       <PublicHeader />
