@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Home, Briefcase, Map, User, Settings, FileText } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Logo from "@/components/ui/Logo";
 
 const nav = [
   { href: "/dashboard", label: "Dashboard", icon: Home },
@@ -16,7 +17,10 @@ const nav = [
 export default function AppSidebar() {
   return (
     <aside className="fixed inset-y-0 left-0 z-40 w-64 border-r bg-background">
-      <div className="h-14 px-4 border-b flex items-center font-bold">CareerHub</div>
+      <div className="h-14 px-4 border-b flex items-center gap-2 font-bold">
+        <Logo size={24} />
+        BabyCollab
+      </div>
       <nav className="px-2 py-4 space-y-1">
         {nav.map((item) => {
           const Icon = item.icon;

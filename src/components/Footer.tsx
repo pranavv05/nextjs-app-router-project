@@ -3,13 +3,17 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import Logo from "@/components/ui/Logo";
 
 export default function Footer() {
   return (
     <footer className="border-t mt-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
-          <div className="font-bold text-lg">CareerHub</div>
+          <div className="flex items-center gap-2 font-bold text-lg mb-2">
+            <Logo size={24} />
+            BabyCollab
+          </div>
           <p className="mt-2 text-sm text-muted-foreground">
             Build and navigate your career with roadmaps, projects, and guidance.
           </p>
@@ -38,7 +42,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="border-t py-6 text-center text-sm text-muted-foreground">© 2025 CareerHub</div>
+      <div className="border-t py-6 text-center text-sm text-muted-foreground">© 2025 BabyCollab</div>
     </footer>
   );
 }

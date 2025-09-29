@@ -3,14 +3,16 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import Logo from "@/components/ui/Logo";
 
 export default function PublicHeader() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Link href="/" className="font-bold text-lg">
-            CareerHub
+          <Link href="/" className="flex items-center gap-2 font-bold text-lg hover:opacity-80 transition-opacity">
+            <Logo size={28} />
+            BabyCollab
           </Link>
         </div>
         <nav className="flex items-center gap-6">

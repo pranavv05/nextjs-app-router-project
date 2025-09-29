@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Logo from "@/components/ui/Logo";
 
 const navItems = [
   { href: "/", label: "Gallery" },
@@ -29,9 +30,10 @@ export function Navigation() {
           <div className="flex items-center space-x-1">
             <Link 
               href="/" 
-              className="text-xl font-bold text-gray-900 hover:text-gray-700 transition-colors"
+              className="flex items-center gap-2 text-xl font-bold text-gray-900 hover:text-gray-700 transition-colors"
             >
-              Orchids
+              <Logo size={24} />
+              BabyCollab
             </Link>
           </div>
           <div className="flex items-center space-x-1 overflow-x-auto">

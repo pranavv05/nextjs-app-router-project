@@ -6,7 +6,7 @@ export default function AboutPage() {
       <header className="mb-10">
         <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight">Our Mission.</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-prose">
-          We believe every student deserves a clear path into tech. CareerHub unifies learning, collaboration, and showcasing
+          We believe every student deserves a clear path into tech. BabyCollab unifies learning, collaboration, and showcasing
           your work—so you can stop juggling tools and start building your future.
         </p>
       </header>
@@ -20,7 +20,7 @@ export default function AboutPage() {
               fragmented learning platforms, scattered project tools, and no cohesive way to prove real-world skills.
             </p>
             <p>
-              CareerHub solves this with an integrated workspace—AI-powered roadmaps to guide what to learn next, project hubs
+              BabyCollab solves this with an integrated workspace—AI-powered roadmaps to guide what to learn next, project hubs
               to collaborate with peers, and a living profile that captures your progress, projects, and endorsements.
             </p>
             <p>
